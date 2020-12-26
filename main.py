@@ -106,4 +106,3 @@ def run_alexa():
 
 while True:
     run_alexa()
-    print("This is B1")
