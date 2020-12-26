@@ -44,7 +44,10 @@ def run_alexa():
 
     elif 'time' in command:
         time = datetime.datetime.now().strftime('%I:%M %p')
-        talk('Current time is ' + time)
+        day = datetime.datetime.now().strftime('%A')
+        msg = f"Current time is {time} And the day is {day}"
+        talk(msg)
+
 
     elif 'are you single' in command:
         talk('I am in a relationship with Siri')
